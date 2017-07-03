@@ -101,7 +101,7 @@ ul {
   height: 21rem;
 }
 
-.product, #glasses {
+.product, #glasses, #watch {
   display: flex;
   flex-direction: column;
   height: 15rem;
@@ -166,7 +166,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
 
-  .product, #glasses {
+  .product, #glasses, #watch {
     width: 47%;
   }
 
@@ -189,4 +189,53 @@ footer {
   ul {
     justify-content: center;
   }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .mainBanner {
+    height: 15rem;
+  }
+
+  .mainBannerTextBox {
+    margin-top: 10rem;
+    height: 5rem;
+  }
+
+  .mainBannerText1 {
+    font-weight: bold;
+    font-size: .77rem;
+    margin-top: 1rem;
+    margin-bottom: .75rem;
+    margin-left: 3rem;
+  }
+
+  .mainBannerText2 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 3rem;
+  }
+
+  .productGrid {
+    justify-content: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .locHoursGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerBox {
+    justify-content: center;
+  }
+
 }
