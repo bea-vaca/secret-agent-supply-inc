@@ -81,6 +81,10 @@ ul {
   align-items: center;
 }
 
+#tabnav {
+  display: none;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -97,7 +101,7 @@ ul {
   height: 21rem;
 }
 
-.product {
+.product, #glasses {
   display: flex;
   flex-direction: column;
   height: 15rem;
@@ -160,11 +164,29 @@ footer {
   align-items: center;
 }
 
-/*@media only screen and (max-width: 1024px) {
-  .explPen, .celWatch, .therGlasses {
+@media only screen and (max-width: 1024px) {
+
+  .product, #glasses {
     width: 47%;
   }
+
+  #glasses {
+    display: none;
+  }
+
   .location, .hours {
     width: 35%;
   }
-}*/
+
+  #tabnav {
+    display: block;
+  }
+
+  ul li {
+    display: none;
+  }
+
+  ul {
+    justify-content: center;
+  }
+}
